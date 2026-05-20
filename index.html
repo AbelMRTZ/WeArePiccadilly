@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeArePiccadilly</title>
+    <link rel="stylesheet" href="css/fontello.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script defer src="js/main.js"></script>
+    <script defer src="js/toggle.js"></script>
+    
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+            <img src="resources/logo_rojo.png" width="50" height="50" alt="WAP">
+        </a>
+        <nav id="menu-1">
+            <ul class="menu">
+                <li><a href="#video_inicial" class="hover"><span class="text">Home</span></a></li>
+                <li><a href="#seccion_proyectos" class="hover"><span class="text">Proyectos</span></a></li>
+                <li><a href="#seccion_servicios" class="hover"><span class="text">Servicios</span></a></li>
+                <li><a href="#seccion_nosotros" class="hover"><span class="text">Nosotros</span></a></li>
+                <li><a href="#seccion_contacto" class="hover"><span class="text">Contacto</span></a></li>
+                <li><a href="#seccion_clientes" class="hover"><span class="text">Clientes</span></a></li>
+
+            </ul>
+        </nav>
+        <div class="btn_menu">
+            <button id="menu-toggle"><icon class="icon-menu"></icon></button>
+            <nav id="menu-2" class="hidden">
+                <ul class="menu">
+                    <li><a href="#video_inicial" class="hover"><span class="text">Home</span></a></li>
+                    <li><a href="#seccion_proyectos" class="hover"><span class="text">Proyectos</span></a></li>
+                    <li><a href="#seccion_servicios" class="hover"><span class="text">Servicios</span></a></li>
+                    <li><a href="#seccion_nosotros" class="hover"><span class="text">Nosotros</span></a></li>
+                    <li><a href="#seccion_contacto" class="hover"><span class="text">Contacto</span></a></li>
+                    <li><a href="#seccion_clientes" class="hover"><span class="text">Clientes</span></a></li>
+                </ul>
+            </nav>
+        </div>    
+    </header>
+    <div class="scrollable">
+        <main>
+            <div id="video_inicial">
+                <video autoplay muted loop playsinline preload="auto">
+                    <source src="resources/VIDEO CABECERA WEB.mov" type="video/mp4">
+                    Tu navegador no soporta el video HTML5.
+                </video>
+                <div id="texto_inicio">
+                    <h1>We Are Piccadilly</h1>
+                    <p>Si tú no dices lo que haces, otros dirán lo que no haces</p>
+                </div>
+            </div>
+            <div id="seccion_info">
+                <h1>FESTIVAL JAZZ YECLA 2025</h1>
+                <h4>Descubre Nuestro Programa Especial Resumen con Entrevistas</h4>
+                <button onclick="window.open('https://www.youtube.com/watch?v=061sv1OEGi8')"><icon class="icon-right-open"></icon>Ver Vídeo</button>
+                <!--
+                <video controls muted playsinline poster="resources/PORTADA YOUTUBE VIDEO CORTO.jpg">
+                    <source src="resources/YECLA JAZZ FESTIVAL 2025- programación.mov" type="video/mp4">
+                    Tu navegador no soporta el video HTML5.
+                </video>
+                -->
+                <a href="https://www.youtube.com/watch?v=061sv1OEGi8">
+                    <img src="resources/PORTADA VIDEO YOUTUBE.jpg">
+                </a>
+                <div class="separador">
+                <div class="wave-transition">
+                    <svg viewBox="0 0 1440 320" preserveAspectRatio="none">
+                      <path class="wave-path"
+                        d="M0,160L60,176C120,192,240,224,360,213.3C480,203,600,149,720,144C840,139,960,181,1080,186.7C1200,192,1320,160,1380,144L1440,128L1440,0L0,0Z">
+                      </path>
+                    </svg>
+                  </div>               
+            </div>
+            </div>
+
+            <!-- <div class="separador">
+                <img src="resources/LOGO CUADRADO WAP- transparente.png" alt="" id="wap_relieve">
+            </div> -->
+            <!--SECCION PROYECTOS-->
+            <div id="seccion_proyectos">
+                <!--GENERADO CON JS-->     
+            </div>
+            <div class="separador">
+                
+            </div>
+            <!--SECCION SERVICIOS-->
+            <div id="seccion_servicios">
+                <button class="nav" id="prev"><</button>
+                <div class="carousel-track">
+                    <div class="card">
+                        <i class="icon-laptop"></i>
+                        <h3>Streaming</h3>
+                        <p class="description">Emitimos con realización multicámara en directo tu evento a través de plataformas online.</p>
+                    </div>
+                    <div class="card active"> <!-- CARD CENTRAL -->
+                        <i class="icon-videocam-alt"></i>
+                        <h3>Grabación de Eventos</h3>
+                        <p class="description">Grabamos tu concierto, conferencia, acto protocolario, asambleas, etc, a través de un formato multicámara.</p>
+                    </div>
+                    <div class="card">
+                        <i class="icon-video"></i>
+                        <h3>Documentales</h3>
+                        <p class="description">Somos especialistas en el documentalismo, desde los procesos iniciales de grabación, guión y edición, hasta la post-producción.</p>
+                    </div>
+                    <div class="card">
+                        <i class="icon-handshake-o"></i>
+                        <h3>Corporativos</h3>
+                        <p class="description">¿Necesitas contar en pocos segundos tu proyecto?, apostamos por el formato audiovisual corto impactante y comunicativo.</p>
+                    </div>
+                    <div class="card">
+                        <i class="icon-chat-empty"></i>
+                        <h3>Entrevistas</h3>
+                        <p class="description">Somos editores y productores, pero también periodistas. Sabemos que preguntar, adoptar el enfoque y contexto adecuado para cada entrevista.</p>
+                    </div>
+                    <div class="card">
+                        <i class="icon-music"></i>
+                        <h3>Videoclips</h3>
+                        <p class="description">Conocemos la industria musical desde hace muchos años como distribuidor musical, mánager, promotor de conciertos, Disjokey, etc. Contar con imágenes el significado de una canción nos apasiona.</p>
+                    </div>
+                    <div class="card">
+                        <i class="icon-globe"></i>
+                        <h3>Gestión de contenidos</h3>
+                        <p class="description">¿Qué necesitas? Gestionamos y elaboramos tus contenidos en Redes sociales, páginas web, podcast, etc.</p>
+                    </div>
+                    <div class="card">
+                        <i class="icon-camera"></i>
+                        <h3>Fotografía</h3>
+                        <p class="description">Nos encanta la fotografía. ¿Quieres realizar un book fotográfico de tus productos o eventos?</p>
+                    </div>
+                    <div class="card">
+                        <i class="icon-newspaper"></i>
+                        <h3>Plan de comunicación</h3>
+                        <p class="description">Somos periodistas, conocemos las pautas para que la comunicación cumpla sus objetivos. Déjanos planificar y estructurar tu modelo de comunicación.</p>
+                    </div>
+                    <div class="card">
+                        <i class="icon-eye"></i>
+                        <h3>Visuales</h3>
+                        <p class="description">Hemos trabajado como Djs durante muchos años. Una sesión musical no es lo mismo sin imágenes y animación visual, el sonido lo pones tú con tu música.</p>
+                    </div>
+                    <div class="card">
+                        <i class="icon-bullhorn"></i>
+                        <h3>Speaker</h3>
+                        <p class="description">¿Necesitas un presentador para tu evento?. Nuestra formación como periodista nos permite realizarlo en cualquier tipo de evento.</p>
+                    </div>
+                    <div class="card">
+                        <i class="icon-podcast"></i>
+                        <h3>Radio</h3>
+                        <p class="description">Nos apasiona la radio. ¿Necesitas cuñas radiofónicas o la elaboración de un podcast?</p>
+                    </div>
+                    <div class="card">
+                        <i class="icon-sitemap"></i>
+                        <h3>Páginas Web</h3>
+                        <p class="description">¿Necesitas un sitio web? Contamos con los conocimientos necesarios para la creación y mantenimiento de Paginas Web.</p>
+                    </div>
+                </div>
+                <button class="nav" id="next">></button>
+            </div>
+            <div class="separador">
+            </div>
+            <!--SECCION NOSOTROS-->
+            <div id="seccion_nosotros">
+                <div class="foto_nosotros">
+                    <img src="resources/FOTO TOMAS CON FONDO.jpg" alt="Imagen 3">
+                    <h2>Tomás Martínez Pérez</h2>
+                    <p>Director de WeArePiccadilly</p>
+                </div>
+                <div class="desc_nosotros">
+                    <p><strong>We Are Piccadilly</strong> comienza hace unos años convencidos de que la <strong>Producción Audiovisual</strong> es una herramienta indispensable para cualquier proyecto en la sociedad actual. Nuestra formación en producción y realización de programas radio-televisivos nos permite proyectar y dar visibilidad a tu proyecto con el formato mas adecuado.</p>
+                    <p>Además, contamos con mas de <strong>25 años de experiencia</strong> como periodista en distintos medios de comunicación (Televisión, radio, prensa escrita, etc.), lo que nos permite conocer perfectamente el modelo comunicativo y el enfoque apropiado para cada actividad o proyecto.</p>
+                </div>
+            </div>
+            <div class="separador">
+            </div>
+            <!--SECCION CONTACTO-->
+            <div id="seccion_contacto">
+                <div class="texto1_contacto">
+                    <h1>Conectemos para crear algo único</h1>
+                    <div id="cont_h3">
+                        <h3>Escribenos y convierte tu visión en una historia que contar</h3>
+                    </div>
+                </div>
+                <div class="mapa_contacto">
+                    <a href="https://www.google.es/maps/place/C.+Hernán+Cortés,+122,+3m,+30510+Yecla,+Murcia/@38.61418,-1.12997,17z/data=!3m1!4b1!4m5!3m4!1s0xd63fdd0cfebd473:0x7a8a2c6197a3d3a4!8m2!3d38.61418!4d-1.12997?hl=es&entry=ttu&g_ep=EgoyMDI1MDcxMy4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer"><img src="resources/mapa_yecla.png"  alt="mapa"></a>
+                </div>
+                <div class="texto2_contacto">
+                    <div class="parte1_contacto">          
+                        <img src="resources/LOGO CUADRADO WAP- transparente.png" alt="">
+                        <h3>Teléfono:</h3>
+                        <p>649766405</p>
+                        <h3>Correo:</h3>
+                        <p>wearepiccadilly@gmail.com</p>
+                    </div>
+                    <div class="parte2_contacto">
+                        <p class="p_contacto">Cada gran historia comienza con un primer contacto.</p>
+                        <p class="p_contacto">Escríbenos y hablemos de lo que quieres contar al mundo.</p>
+                        <div class="parte2-1_contacto">
+                            <div class="parte2-2_contacto">
+                                <h3>Calle:</h3>
+                                <p>C/ Hernán Cortés 122</p>
+                            </div>
+                            <div class="parte2-2_contacto">
+                                <h3>Ciudad:</h3>
+                                <p>30510 Yecla (Murcia)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="separador">
+                    <h1>A un 'click' de comenzar algo grande...</h1>
+                </div>
+                <div class="form_contacto">
+                   <form id="contact_form" action="api/send_email.php" method="POST">
+                        <div class="form_estilo">
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" placeholder=" Ej: John Doe" id="nombre" name="nombre" required><br><br>
+                        </div>
+                        <div class="form_estilo">
+                            <label for="email">Correo electrónico:</label>
+                            <input type="email" placeholder=" Ej: johndoe@example.com" id="email" name="email" required><br><br>
+                        </div>
+                        <div class="form_estilo">
+                            <label for="asunto">Asunto:</label>
+                            <input type="text" placeholder=" Ej: Interés en Contratar los Servicios de WeArePiccadilly..." id="asunto" name="asunto" required><br><br>
+                        </div>
+                    
+                        <div class="form_estilo">
+                            <label for="mensaje">Mensaje:</label>
+                            <textarea id="mensaje" name="mensaje" rows="6" required></textarea><br><br>
+                        </div>
+                       
+                        <div class="btn_enviar">
+                            <button type="submit">Enviar</button>
+                        </div>
+                   </form> 
+                </div>
+            </div>
+            <!--SECCION CLIENTES-->
+            <div id="seccion_clientes">
+                <div class="client_card">
+                    <img src="resources/Logotipos/ayuntamiento_BC.png" alt="Imagen 3" class="gray">
+                    <img src="resources/Logotipos/AYUNTAMIENTO DE YECLA.png" alt="Imagen 3" class="normal">
+                </div>
+                <div class="client_card">
+                    <img src="resources/Logotipos/ama_BC.png" alt="Imagen 3" class="gray">
+                    <img src="resources/Logotipos/AMA-SABER-TRANSP.png" alt="Imagen 3" class="normal">
+                </div>
+                <div class="client_card">
+                    <img src="resources/Logotipos/siglo_oro_BC.png" alt="Imagen 3" class="gray">
+                    <img src="resources/Logotipos/LOGO AOSICACION YECLA SIGLO DE ORO- TRANSP.png" alt="Imagen 3" class="normal">
+                </div>
+                <div class="client_card">
+                    <img src="resources/Logotipos/mayordomo_BC.png" alt="Imagen 3" class="gray">
+                    <img src="resources/Logotipos/MAYORDOMOS.png" alt="Imagen 3" class="normal">
+                </div>
+                <div class="client_card">
+                    <img src="resources/Logotipos/casadecultura_BC.png" alt="Imagen 3" class="gray">
+                    <img src="resources/Logotipos/LOGO CASA DE CULTURA -TRANSPARENTE.png" alt="Imagen 3" class="normal">
+                </div>
+                <div class="client_card">
+                    <img src="resources/Logotipos/tenisdemesa_BC.png" alt="Imagen 3" class="gray">
+                    <img src="resources/Logotipos/LOGO CLUB TENIS DE MESA ALTIPLANO.png" alt="Imagen 3" class="normal">
+                </div>
+                <div class="client_card">
+                    <img src="resources/Logotipos/folclorico_BC.png" alt="Imagen 3" class="gray">
+                    <img src="resources/Logotipos/LOGO GRUPO FOLCLORICO ARABI.png" alt="Imagen 3" class="normal">
+                </div>
+                <div class="client_card">
+                    <img src="resources/Logotipos/radiodelsur_BC.png" alt="Imagen 3" class="gray">
+                    <img src="resources/Logotipos/LOGO LA RADIO DEL SUR.png" alt="Imagen 3" class="normal">
+                </div>
+                <div class="client_card">
+                    <img src="resources/Logotipos/rien_BC.png" alt="Imagen 3" class="gray">
+                    <img src="resources/Logotipos/LOGO RIEN- TRANSP.png" alt="Imagen 3" class="normal">
+                </div>
+                <div class="client_card">
+                    <img src="resources/Logotipos/scrambled_BC.png" alt="Imagen 3" class="gray">
+                    <img src="resources/Logotipos/LOGO SCRAMBLED.png" alt="Imagen 3" class="normal">
+                </div>
+                <div class="client_card">
+                    <img src="resources/Logotipos/yeclaclubdefutbol_BC.png" alt="Imagen 3" class="gray">
+                    <img src="resources/Logotipos/LOGO YECLA CF.png" alt="Imagen 3" class="normal">
+                </div>
+                <div class="client_card">
+                    <img src="resources/Logotipos/yeclaclubdetenis_BC.png" alt="Imagen 3" class="gray">
+                    <img src="resources/Logotipos/LOGO YECLA CLUB DE TENIS TRANSPARENTEOK.png" alt="Imagen 3" class="normal">
+                </div>  
+            </div>
+
+            <div class="separador">
+            </div>
+            
+            <div id="seccion_radio">
+                <h1>¡ESCUCHA 'El Camino del Artista' AHORA!</h1>
+                <h4>Nuestro Programa de Radio en Colaboracion con '<b>La Radio del Sur</b>'</h4>
+                <button onclick="window.location.href='radio.html'"><icon class="icon-right-open"></icon>Escuchalo Ahora</button>
+                <video controls muted playsinline poster="resources/PORTADA VIDEO EL CAMINO DEL ARTISTA.jpg">
+                    <source src="resources/VIDEO SPOT PROMO ECDA- OK.mp4" type="video/mp4">
+                    Tu navegador no soporta el video HTML5.
+                </video>
+                <div class="separador">
+                <div class="wave-transition">
+                    <svg viewBox="0 0 1440 320" preserveAspectRatio="none">
+                      <path class="wave-path"
+                        d="M0,160L60,176C120,192,240,224,360,213.3C480,203,600,149,720,144C840,139,960,181,1080,186.7C1200,192,1320,160,1380,144L1440,128L1440,0L0,0Z">
+                      </path>
+                    </svg>
+                  </div>               
+            </div>
+            </div>
+
+        </main>
+        <footer>
+            <p>Copyright©2025 - WeArePiccadilly Producciones</p>
+            <div id="social_media">
+                <a href="https://www.instagram.com/we_are_piccadilly/" target="_blank" rel="noopener noreferrer"><span class="icon"><i class="icon-instagram"></i></span></a>
+                <a href="https://www.youtube.com/@wearepiccadilly" target="_blank" rel="noopener noreferrer"><span class="icon"><i class="icon-youtube-play"></i></span></a>
+                <a href="https://www.ejemplo.com" target="_blank" rel="noopener noreferrer"><span class="icon"><i class="icon-linkedin-squared"></i></span></a>
+                <a href="https://www.facebook.com/PICCADILLYECLA/?locale=es_ES" target="_blank" rel="noopener noreferrer"><span class="icon"><i class="icon-facebook"></i></span></a>
+                <a href="https://es.pinterest.com/wearepiccadilly/" target="_blank" rel="noopener noreferrer"><span class="icon"><i class="icon-pinterest"></i></span></a>  
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

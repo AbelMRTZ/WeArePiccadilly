@@ -1,0 +1,1099 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+header {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    height: 80px;
+    background-color: whitesmoke;
+    border-bottom: 4px solid #F10000;
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+}
+
+header .btn_menu {
+    display: none;
+    position: relative;
+}
+
+header #menu-2 {
+    position: absolute;
+    top: 52.5px;           /* justo debajo del botón */
+    right: -30px;            /* alineado al borde derecho del contenedor */
+    width: 150px;
+    height: auto;
+    display: none;
+    flex-direction: column;
+    background-color: whitesmoke;
+    border-top: 4px solid #F10000;
+    z-index: 999;  
+    padding-left: 20px;
+}
+
+#menu-2 ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    height: auto;
+}
+
+#menu-2 .menu li {
+    margin-bottom: 20px;
+    font-size: 17px;
+}
+
+#menu-2.visible {
+    display: flex;
+    flex-direction: column;
+}
+
+.scrollable {
+    position: absolute;
+    top: 80px; bottom: 0;
+    left: 0; right: 0;
+    overflow-y: auto;            
+    overscroll-behavior-y: contain; 
+    scroll-behavior: smooth;
+}
+
+nav {
+    margin-left: auto;
+    margin-right: 30px;
+}
+
+header a img {
+    margin-left: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    padding-right: 20px;
+    color: black;
+}
+
+nav a span:hover {
+    border-bottom: 1px solid #F10000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+#video_inicial {
+    width: 100%;
+    height: 850px;
+    overflow: hidden;
+    position: relative;
+}
+
+#video_inicial video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#texto_inicio {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 10;
+    white-space: nowrap;
+}
+
+#texto_inicio h1 {
+    font-size: 5em !important;
+    color: white;
+    margin-bottom: 12px;
+}
+
+#texto_inicio p {
+    font-size: 1.5em !important;
+    color: lightgray;
+    margin-top: 0px;
+}
+
+footer {
+    height: 150px;
+    padding-top: 30px;
+    background-color: whitesmoke;
+}
+
+footer p {
+    display: flex;
+    justify-content: center;
+    font-size: 17px;
+    color: black;
+}
+
+footer #social_media {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+footer .icon {
+    color: black;
+    font-size: 25px;
+}
+
+footer .icon:hover {
+    color: #F10000;
+    font-size: 25px;
+}
+
+#seccion_proyectos {
+    display: flex;
+    justify-content: space-between; /* o 'center', o 'space-around' */
+    flex-wrap: wrap;
+}
+
+.proyecto {
+    position: relative;
+    overflow: hidden;
+    flex: 1 1 calc(33.333% - 5px);
+    max-width: calc(33.333% - 5px);
+    aspect-ratio: 4 / 2.5;
+    background-color: #F10000;
+    margin-bottom: 6px;
+    
+}
+
+.proyecto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.info_proyectos h1 {
+    margin-bottom: 0px;
+}
+
+.proyecto .info_proyectos {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* fondo oscuro semitransparente */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    padding: 20px;
+    text-align: center;
+}
+
+.proyecto:hover .info_proyectos {
+    opacity: 1;
+}
+
+#seccion_servicios {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    background: white;
+    padding: 2rem;
+
+    overflow: hidden;
+    max-width: 100%;
+  }
+  
+.carousel-track {
+    display: flex;
+    overflow: hidden;
+    gap: 1.5rem;
+    align-items: center;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 50px;
+
+    overflow: hidden;
+    transition: transform 0.5s ease;
+}
+
+.card {
+    background: white;
+    width: 200px;
+    height: 200px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    opacity: 0.6;
+}
+
+
+.card .description {
+    display: none;
+    text-align: justify;
+    margin: 2px;
+}
+
+.card.active {
+    opacity: 1;
+    width: 350px;
+    height: 350px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+}
+
+.card i {
+    color: #F10000;
+}
+
+.card.active i {
+    width: 100%;
+    height: 60%;
+    font-size: 150px;
+    object-fit: cover;
+}
+
+.card.left i {
+    width: 100%;
+    height: 60%;
+    font-size: 80px;
+    object-fit: cover;
+}
+
+.card.right i {
+    width: 100%;
+    height: 60%;
+    font-size: 80px;
+    object-fit: cover;
+}
+
+.card h3 {
+margin-bottom: 0px;
+margin-top: 5px;
+}
+
+.card.active .description {
+display: block;
+margin-top: 0.5rem;
+color: gray;
+}
+
+.nav {
+background: white;
+border: none;
+font-size: 2rem;
+padding: 0.5rem 1rem;
+cursor: pointer;
+border-radius: 8px;
+}
+
+.card.left, .card.right {
+transform: scale(0.8);
+opacity: 0.6;
+}
+
+#seccion_nosotros {
+    display: flex;
+    width: 100%;
+    align-items: flex-start; 
+    height: auto; 
+}
+
+.foto_nosotros {
+    position: relative;
+    width: 40%;
+    aspect-ratio: 1 / 1;
+    margin: 5%;
+}
+
+.foto_nosotros img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+}
+
+.foto_nosotros h2 {
+    margin-bottom: 0px;
+    font-size: clamp(1rem, 3vw, 3.5rem);
+}
+
+.foto_nosotros p {
+    font-size: clamp(0.5rem, 1.8vw, 2.5rem);
+    margin-top: 5px;
+}
+
+.desc_nosotros {
+    width: 60%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 4%;
+    margin-bottom: 15.2%;
+    border-bottom:  1px solid #F10000 ;
+}
+
+.desc_nosotros p {
+    text-align: justify;
+    font-size: clamp(0.5rem, 2vw, 2.5rem);
+}
+
+.mapa_contacto {
+    width: 90%;
+    aspect-ratio: 2 / 1;
+    background-color: #F10000;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.604);
+}
+
+.mapa_contacto:hover {
+    box-shadow: 0 4px 8px rgba(240, 0, 0, 0.604);
+}
+
+.mapa_contacto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+.texto1_contacto {
+    width: 80%;
+    margin-left: 10%;
+    text-align: center;
+}
+
+.texto1_contacto h1 {
+    margin-bottom: 0px;
+    font-size: clamp(2rem, 5vw, 4rem);
+}
+
+#texv1 p {
+    margin-top: 70px;
+    margin-bottom: 0px;
+    text-decoration: underline 1px #F10000;
+    text-underline-offset: 15px; 
+    font-size: 25px;
+    font-size: clamp(1.1rem, 3vw, 4rem);
+}
+
+#cont_h3 {
+    display: inline-block;
+}
+
+#cont_h3 h3 {
+    border-bottom:  1px solid #F10000 ;
+    padding-bottom: 20px;
+    margin-top: 5px;
+    font-size: clamp(1rem, 2vw, 2rem);
+}
+
+.form_estilo {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.form_estilo input {
+    height: 40px;
+    background-color: whitesmoke;
+    border: 0.5px solid black;
+}
+
+.form_estilo label {
+    margin-bottom: 3px;
+}
+
+.form_estilo textarea {
+    margin-top: 0px;
+    height: 200px;
+    background-color: whitesmoke;
+    border: 0.5px solid black;
+}
+
+.form_estilo input:focus {
+    background-color: white;
+}
+
+.form_estilo textarea:focus {
+    background-color: white;
+}
+
+.btn_enviar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.btn_enviar button {
+    color: whitesmoke;
+    background-color: #F10000;
+    border: none;
+    width: 90px;
+    font-size: 15px;
+    font-weight: bold;
+    aspect-ratio: 2 / 1;
+}
+
+.btn_enviar button:hover {
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #b80000;
+}
+
+#seccion_clientes {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgba(223, 223, 223, 0.749);
+}
+
+.client_card {
+    position: relative;
+    overflow: hidden;
+    flex: 1 1 calc(16.66% - 5px);
+    max-width: calc(16.66% - 5px);
+    aspect-ratio: 1 / 1;
+}
+
+.client_card img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: opacity 0.2s ease;
+}
+
+.client_card .normal {
+    opacity: 0;
+    z-index: 1;
+}
+  
+.client_card .gray {
+    opacity: 1;
+    z-index: 2;
+}
+  
+.client_card:hover .normal {
+    opacity: 1;
+}
+  
+.client_card:hover .gray {
+    opacity: 0;
+}
+
+.texto2_contacto {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 30px;
+}
+
+.parte1_contacto {
+    width: 40%;
+    margin-left: 5%;
+}
+
+.parte1_contacto img {
+    width: 100%;
+    aspect-ratio: 3 / 1;
+}
+
+.parte1_contacto p {
+    margin-left: 5%;
+    margin-top: 5px;
+    font-size: clamp(0.5rem, 2.5vw, 2rem);
+}
+
+.parte1_contacto h3 {
+    margin-left: 5%;
+    margin-bottom: 0px;
+    font-size: clamp(1rem, 3vw, 3rem);
+}
+
+.parte2_contacto {
+    width: 50%;
+    margin-right: 5%;
+    position: relative;
+}
+
+.parte2_contacto .p_contacto {
+    margin-top: 10px;
+    margin-bottom: 7%;
+    font-size: clamp(0.5rem, 2.5vw, 3rem);
+}
+
+.parte2-1_contacto {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.parte2-1_contacto p {
+    margin-top: 5px;
+    font-size: clamp(0.5rem, 2.5vw, 2rem);
+}
+
+.parte2-1_contacto h3 {
+    font-size: clamp(1rem, 3vw, 3rem);
+    margin-bottom: 8px;
+}
+
+.parte2-2_contacto {
+    width: 45%;
+}
+
+#seccion_contacto .separador {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    margin-bottom: 40px;
+}
+
+#seccion_radio {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    padding-top: 50px;
+    background-color: rgb(31, 31, 31);
+}
+
+#seccion_radio h1 {
+    color: whitesmoke;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#seccion_radio h4 {
+    color: rgba(255, 255, 255, 0.82);
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#seccion_radio button {
+    margin-top: 30px;
+    margin-bottom: 60px;
+    background-color: #F10000;
+    color: whitesmoke;
+    border: none;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 2px;
+    width: 170px;
+    height: 40px;
+}
+
+#seccion_radio video {
+    margin-bottom: 60px;
+    width: 70%;
+    height: 70%;
+}
+
+#seccion_radio button:hover {
+    background-color: #b80000;
+}
+
+/* ---------- MODAL ---------- */
+
+.modal {
+    display: none;                          /* Oculto por defecto */
+    position: fixed;                        /* Posición fija respecto a la ventana */
+    z-index: 1000;                          /* Encima de otros elementos */
+    left: 0;
+    top: 0;
+    width: 100%;                            /* Ocupa todo el ancho */
+    height: 100%;                           /* Ocupa todo el alto */
+    background-color: rgba(0,0,0,0.4);      /* Fondo semitransparente */
+}
+
+.modal-content {
+    background-color: #fff;                /* Fondo blanco */
+    position: relative;                    /* Relativo dentro del modal */
+    margin: 10% auto;                      /* Centrado horizontal con margen superior */
+    padding: 30px 20px 20px;               /* Espacio interno */
+    border: 1px solid #888;                /* Borde gris */
+    width: 80%;                            /* Ocupa el 80% del ancho disponible */
+    max-width: 500px;                      /* Máximo ancho */
+    text-align: center;                    /* Texto centrado */
+    border-radius: 8px;                    /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);  /* Sombra */
+}
+
+.modal.active {
+    display: block;   /* Muestra el modal cuando tiene clase active */
+}
+
+.modal-buttons {
+    margin-top: 20px;         /* Espacio superior */
+    display: flex;            /* Contenedor flexible */
+    justify-content: center;  /* Centrado horizontal */
+    gap: 20px;                /* Espacio entre botones */
+}
+
+.modal-buttons button {
+    padding: 10px 20px;       /* Espacio interno */
+    font-size: 16px;          /* Tamaño del texto */
+    border: none;             /* Sin borde */
+    border-radius: 5px;       /* Bordes redondeados */
+    cursor: pointer;          /* Cursor tipo botón */
+}
+
+.btn-salir {
+    background-color: #F10000;  /* Igual al botón aceptar */
+    color: white;
+}
+
+.btn-salir:hover {
+    background-color: #b80000;  /* Igual al hover de aceptar */
+}
+
+#wap_relieve {
+    height: 90%;
+    object-fit: contain;
+    display: block;
+    align-items: center;
+    padding-top: 30px;
+}
+
+/* CSS DE LA RADIO */
+
+#radio_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin-top: 0px;
+}
+
+.radio_card {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border: 3px solid black;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: 50px;
+    margin: 7px;
+    width: 70%;
+    background: linear-gradient(to right, rgb(0, 0, 0), transparent);
+    background-repeat: no-repeat;
+    background-size: 70px; /* 30px de ancho, 50% de alto */
+    background-position: left center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+.radio_card_main {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border: 3px solid #F10000;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: 70px;
+    margin: 7px;
+    width: 70%;
+    background: linear-gradient(to right, rgb(238, 0, 0, 1), transparent);
+    background-repeat: no-repeat;
+    background-size: 70px; /* 30px de ancho, 50% de alto */
+    background-position: left center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+.radio_card icon, .radio_card_main icon {
+    color: whitesmoke;
+    font-size: 30px;
+    margin-left: 5px;
+}
+
+.radio_card p {
+    white-space: nowrap;         /* No permite saltos de línea */
+    overflow: hidden;            /* Oculta el texto que se sale */
+    text-overflow: ellipsis;     /* Muestra "..." al final */
+    margin-left: 25px;
+    margin-right: 5px;
+    font-weight: 700;
+    color: black;
+}
+
+.radio_card_main p {
+    white-space: nowrap;         /* No permite saltos de línea */
+    overflow: hidden;            /* Oculta el texto que se sale */
+    text-overflow: ellipsis;     /* Muestra "..." al final */
+    margin-right: 5px;
+    font-weight: 700;
+    color: #F10000;
+}
+
+.radio_card:hover{
+    background-color: black;
+    width: 72%;
+    height: 52px;
+}
+
+.radio_card_main:hover {
+    background-color: #F10000;
+    width: 72%;
+    height: 72px;
+}
+
+.radio_card:hover p, .radio_card_main:hover p{
+    color: whitesmoke;
+}
+
+.texto1_contacto p {
+    padding-left: 10%;
+    padding-right: 8%;
+    text-align: justify;
+    font-size: clamp(1rem, 1.5vw, 1.7rem);
+}
+
+.radio_card_main p {
+    padding-left: 5%;
+    padding-right: 1%;
+    text-align: justify;
+    font-size: clamp(1rem, 1.5vw, 1.7rem);  
+}
+
+.separador {
+    width: 100%;
+    height: 250px;
+    text-align: center;
+    background-color: whitesmoke;
+    overflow: hidden;
+    position: relative;
+}
+
+.separador h1 {
+    font-size: clamp(1.5rem, 3vw, 3.5rem);
+}
+
+.separador2 {
+    width: 100%;
+    height: 200px;
+    background-color: whitesmoke;
+    overflow: hidden;
+    position: relative;
+}
+
+.img_sup {
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 100%;
+    height: 90%;
+    object-fit: contain;
+}
+
+.img_inf {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.separador img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.btn_Mas {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+
+.btn_Mas button {
+    background-color: #F10000;
+    font-size: 20px;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 10px;
+}
+
+.btn_Mas button:hover {
+    background-color: #b80000;
+}
+
+#radio_container a {
+    display: flex; 
+    align-items: center;
+    text-decoration: none;
+    color: inherit; 
+    width: 100%; 
+}
+
+
+@media all and (max-width: 700px) {
+    nav {
+        display: none;
+    }
+
+    header .btn_menu {
+        display: block;
+        width: 70px;
+        margin-right: 0;
+        margin-left: auto;
+    }
+
+    .btn_menu button {
+        all: unset;
+        font-size: 25px;
+    }
+
+    .btn_menu button:hover {
+        color: #F10000;
+    }
+
+    #texto_inicio {
+        white-space: normal;
+    }
+
+    #texto_inicio h1 {
+        font-size: 4em !important;
+        margin-bottom: 35px;
+    }
+    
+    #texto_inicio p {
+        font-size: 1em !important;
+        background-color: rgba(236, 0, 0, 0.671);
+        border-radius: 4px;
+        padding: 3px;
+    }
+
+    #seccion_nosotros {
+        flex-direction: column;
+        gap: 70px;
+    }
+
+    .foto_nosotros {
+        width: 90%;
+    }
+
+    .foto_nosotros h2 {
+        margin-bottom: 0px;
+        font-size: clamp(1.7rem, 3vw, 3.5rem);
+    }
+    
+    .foto_nosotros p {
+        font-size: clamp(1rem, 1.8vw, 2.5rem);
+        margin-top: 5px;
+    }
+
+    .desc_nosotros {
+        width: 90%;
+    }
+
+    .desc_nosotros p {
+        font-size: clamp(1rem, 2vw, 2.5rem);
+    }
+
+    .proyecto {
+        flex: 1 1 calc(100% - 0px);
+        max-width: calc(100% - 0px);
+    }
+
+    footer p {
+        font-size: 15px;
+        flex-wrap: nowrap;
+    }
+
+    .radio_card p {
+        font-size: 15px;
+    }
+
+    #seccion_radio video {
+        margin-bottom: 60px;
+        width: 320px;
+        height: 210px;
+    }
+
+    .texto_separador p {
+        font-size: 25px;
+    }
+}
+
+.wave-transition svg {
+    display: block;
+    width: 100%;
+    height: 100px;
+  }
+  
+  .wave-path {
+    fill: rgb(31, 31, 31);
+    animation: wave 6s ease-in-out infinite alternate;
+  }
+  
+  @keyframes wave {
+    0%   { d: path("M0,160L60,176C120,192,240,224,360,213.3C480,203,600,149,720,144C840,139,960,181,1080,186.7C1200,192,1320,160,1380,144L1440,128L1440,0L0,0Z"); }
+    100% { d: path("M0,160L60,180C120,200,240,220,360,210C480,190,600,150,720,150C840,150,960,180,1080,190C1200,200,1320,180,1380,160L1440,140L1440,0L0,0Z"); }
+  }
+
+#seccion_radio .separador {
+    height: 100px;
+}
+
+/* ------------------ SINGLE MODE (tarjeta más pequeña) ------------------ */
+/* Aplica cuando tu JS añade .single-mode al track */
+.carousel-track.single-mode {
+  justify-content: center;
+  gap: 0;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+/* Card reducida en single */
+.carousel-track.single-mode .card {
+  width: 92%;
+  max-width: 300px;   /* <- cambia aquí si quieres más/menos pequeño */
+  min-width: 180px;   /* evita que se encoja demasiado */
+  min-height: 260px;
+  padding: 0.8rem;
+  margin: 0 auto;
+  opacity: 1;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.35);
+  box-sizing: border-box;
+}
+
+/* Active ligeramente más alto pero aún pequeño */
+.carousel-track.single-mode .card.active {
+  max-width: 300px;
+  min-height: 300px;
+}
+
+/* Icono proporcionalmente más pequeño en single */
+.carousel-track.single-mode .card i,
+.carousel-track.single-mode .card.active i {
+  font-size: 100px;   /* reduce desde 150px (ajusta a 92/84 si quieres más pequeño) */
+  height: auto;
+  display: block;
+  line-height: 1;
+}
+
+/* Tipografía adaptada */
+.carousel-track.single-mode .card h3 {
+  font-size: 1.05rem;
+  margin-top: 6px;
+}
+
+.carousel-track.single-mode .card .description {
+  display: block;
+  font-size: 0.92rem;
+  color: gray;
+  margin-top: 6px;
+  line-height: 1.2;
+}
+
+#seccion_info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    padding-top: 50px;
+    background-color: rgb(31, 31, 31);
+}
+
+#seccion_info .separador {
+    height: 100px;
+}
+
+#seccion_info video {
+    margin-bottom: 60px;
+    width: 320px;
+    height: 210px;
+}
+
+#seccion_info img {
+    margin-bottom: 60px;
+    width: 550px;
+    height: 310px;
+    cursor: pointer;
+
+}
+#seccion_info img:hover {
+    margin-bottom: 60px;
+    width: 550px;
+    height: 310px;
+    cursor: pointer;
+    box-shadow: 0 0 15px #F10000;
+}
+#seccion_info h1 {
+    color: whitesmoke;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#seccion_info h4 {
+    color: rgba(255, 255, 255, 0.82);
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#seccion_info button {
+    margin-top: 30px;
+    margin-bottom: 60px;
+    background-color: #F10000;
+    color: whitesmoke;
+    border: none;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 2px;
+    width: 170px;
+    height: 40px;
+}
+
+#seccion_info video {
+    margin-bottom: 60px;
+    width: 70%;
+    height: 70%;
+}
+
+#seccion_info button:hover {
+    background-color: #b80000;
+}
+  
+
+  
+  
+  
+  
+  
+
+

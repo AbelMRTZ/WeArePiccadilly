@@ -1,0 +1,21 @@
+
+.icon-camera:before { content: '\e800'; } /* '' */
+.icon-videocam:before { content: '\e801'; } /* '' */
+.icon-videocam-alt:before { content: '\e802'; } /* '' */
+.icon-video-alt:before { content: '\e803'; } /* '' */
+.icon-volume-up:before { content: '\e804'; } /* '' */
+.icon-bullhorn:before { content: '\e805'; } /* '' */
+.icon-music:before { content: '\e806'; } /* '' */
+.icon-volume-up-1:before { content: '\e807'; } /* '' */
+.icon-headphones:before { content: '\e808'; } /* '' */
+.icon-mic:before { content: '\e809'; } /* '' */
+.icon-folder:before { content: '\e80a'; } /* '' */
+.icon-rss:before { content: '\e80b'; } /* '' */
+.icon-windows:before { content: '\e80c'; } /* '' */
+.icon-appstore:before { content: '\e80d'; } /* '' */
+.icon-folder-1:before { content: '\e80e'; } /* '' */
+.icon-cinema:before { content: '\e80f'; } /* '' */
+.icon-rss-alt:before { content: '\e810'; } /* '' */
+.icon-users:before { content: '\f064'; } /* '' */
+.icon-credit-card-alt:before { content: '\f283'; } /* '' */
+.icon-folder-open-empty:before { content: '\f4c2'; } /* '' */

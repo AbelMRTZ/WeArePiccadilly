@@ -1,0 +1,130 @@
+{
+  "name": "",
+  "css_prefix_text": "icon-",
+  "css_use_suffix": false,
+  "hinting": true,
+  "units_per_em": 1000,
+  "ascent": 850,
+  "glyphs": [
+    {
+      "uid": "ny7ydbn558y0aij4evvc199yt345tks4",
+      "css": "videocam",
+      "code": 59393,
+      "src": "modernpics"
+    },
+    {
+      "uid": "vsvgkgr7wqknxe7rsjrusvvs43yekcyr",
+      "css": "videocam-alt",
+      "code": 59394,
+      "src": "modernpics"
+    },
+    {
+      "uid": "7ea4150d9eb2d2ade9491d5ad905718c",
+      "css": "credit-card-alt",
+      "code": 62083,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "1n2jlgp5brxxzpvvrly6jbfutnk2fpra",
+      "css": "camera",
+      "code": 59392,
+      "src": "modernpics"
+    },
+    {
+      "uid": "o3ks7v0pzabyrzijuzxmzyzae06it2eh",
+      "css": "video-alt",
+      "code": 59395,
+      "src": "modernpics"
+    },
+    {
+      "uid": "rrb2e7qiu68cw7itzq0wzm2hugw1u4lu",
+      "css": "volume-up",
+      "code": 59396,
+      "src": "modernpics"
+    },
+    {
+      "uid": "uetwmlvm6z9eaot1t74vvsgrte9vwi0n",
+      "css": "bullhorn",
+      "code": 59397,
+      "src": "modernpics"
+    },
+    {
+      "uid": "e7ab5637425cce7dd2176302ddaf1c08",
+      "css": "music",
+      "code": 59398,
+      "src": "elusive"
+    },
+    {
+      "uid": "012ff5762ccb18c16bdfdd6baf187406",
+      "css": "volume-up-1",
+      "code": 59399,
+      "src": "elusive"
+    },
+    {
+      "uid": "7480a298ce334eef70193895e799c3fd",
+      "css": "headphones",
+      "code": 59400,
+      "src": "elusive"
+    },
+    {
+      "uid": "b1a40ej6b1xgsxjeh1b1urm8ptglt0hk",
+      "css": "mic",
+      "code": 59401,
+      "src": "typicons"
+    },
+    {
+      "uid": "b13a27d19dd739e29cbc7926085386d9",
+      "css": "folder",
+      "code": 59402,
+      "src": "iconic"
+    },
+    {
+      "uid": "cbfc8f7ba004d60f5134b30a27e87829",
+      "css": "rss",
+      "code": 59403,
+      "src": "iconic"
+    },
+    {
+      "uid": "8f28e6daf83e5c4f1fec8d170a7e21e7",
+      "css": "folder-open-empty",
+      "code": 62658,
+      "src": "mfglabs"
+    },
+    {
+      "uid": "05ef9b5e8742971aa85b23cfcbe71594",
+      "css": "users",
+      "code": 61540,
+      "src": "mfglabs"
+    },
+    {
+      "uid": "3fe687c833fa36452029b6d57e9149bf",
+      "css": "cinema",
+      "code": 59407,
+      "src": "maki"
+    },
+    {
+      "uid": "01dcfef491cd3603565e4a68d1805332",
+      "css": "windows",
+      "code": 59404,
+      "src": "zocial"
+    },
+    {
+      "uid": "1dbc2b4a7f00ef209a85e4b5d9fedec4",
+      "css": "appstore",
+      "code": 59405,
+      "src": "zocial"
+    },
+    {
+      "uid": "f242fed2af708c938523b0e14d9c6b07",
+      "css": "folder-1",
+      "code": 59406,
+      "src": "websymbols"
+    },
+    {
+      "uid": "7645346d5ab8b17f69a9c765c180aca3",
+      "css": "rss-alt",
+      "code": 59408,
+      "src": "websymbols"
+    }
+  ]
+}
