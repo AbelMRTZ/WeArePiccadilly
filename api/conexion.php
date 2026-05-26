@@ -4,12 +4,14 @@ $host = "localhost";
 $usuario = "wapUser"; // wapUser // root
 $contrasena = "wapPass_6769"; // wapPass_6769
 $bd = "wapDB";
-error_log("Conetandose a la bd");
-$conexion = new mysqli($host, $usuario, $contrasena, $bd);
+error_log("Conectandose a la bd");
+$conexion = @new mysqli($host, $usuario, $contrasena, $bd);
 
 if ($conexion->connect_error) {
-    die("Error de conexión: " . $conexion->connect_error);
+    error_log("Error de conexión: " . $conexion->connect_error);
+    $conexion = null;
 } else {
+    $conexion->set_charset('utf8mb4');
     error_log("conexion correcta a la BD");
 }
 

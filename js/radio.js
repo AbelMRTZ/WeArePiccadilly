@@ -1,4 +1,12 @@
-document.addEventListener("DOMContentLoaded", () => {  
+// Track pointer for spotlight glow on radio cards
+document.addEventListener('pointermove', e => {
+    const root = document.documentElement;
+    root.style.setProperty('--ptr-x',  e.clientX.toFixed(2));
+    root.style.setProperty('--ptr-y',  e.clientY.toFixed(2));
+    root.style.setProperty('--ptr-xp', (e.clientX / window.innerWidth).toFixed(3));
+});
+
+document.addEventListener("DOMContentLoaded", () => {
     function radio() {
         fetch("api/radio.php")
         .then(response => {

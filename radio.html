@@ -4,7 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WeArePiccadilly-Radio</title>
+    <meta name="description" content="El Camino del Artista — Programa de radio de WeArePiccadilly en colaboración con La Radio del Sur. Música, cultura y entrevistas.">
+    <title>WeArePiccadilly — Radio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/fontello.css">
     <link rel="stylesheet" href="css/main.css">
     <script defer src="js/radio.js"></script>
@@ -19,6 +23,7 @@
         <nav id="menu-1">
             <ul class="menu">
                 <li><a href="index.html#video_inicial" class="hover"><span class="text">Home</span></a></li>
+                <li><a href="radio.html" class="hover active"><span class="text">Radio</span></a></li>
                 <li><a href="index.html#seccion_proyectos" class="hover"><span class="text">Proyectos</span></a></li>
                 <li><a href="index.html#seccion_servicios" class="hover"><span class="text">Servicios</span></a></li>
                 <li><a href="index.html#seccion_nosotros" class="hover"><span class="text">Nosotros</span></a></li>
@@ -31,6 +36,7 @@
             <nav id="menu-2" class="hidden">
                 <ul class="menu">
                     <li><a href="index.html#video_inicial" class="hover"><span class="text">Home</span></a></li>
+                    <li><a href="radio.html" class="hover active"><span class="text">Radio</span></a></li>
                     <li><a href="index.html#seccion_proyectos" class="hover"><span class="text">Proyectos</span></a></li>
                     <li><a href="index.html#seccion_servicios" class="hover"><span class="text">Servicios</span></a></li>
                     <li><a href="index.html#seccion_nosotros" class="hover"><span class="text">Nosotros</span></a></li>
@@ -44,40 +50,59 @@
         <main>
             <div class="separador2">
                 <img class="img_inf" src="resources/banners/B_Radio_Rojo.png" alt="" width="1400" height="200">
-                <img class="img_sup" src="resources/LOGO-3- TRANSPARENTE.png" alt="">
+                <img class="img_sup" src="resources/LOGO-3- TRANSPARENTE.png" alt="Logo WeArePiccadilly">
             </div>
-            <div class="texto1_contacto">
-                <h1>EL CAMINO DEL ARTISTA</h1>
-                <div id="cont_h3">
-                    <h3>La música que te define, las voces que te entienden.</h3>
+            <div class="radio-page">
+                <div class="seccion-header">
+                    <span class="seccion-label">Escúchanos</span>
+                    <h2 class="seccion-title">El Camino del Artista</h2>
+                    <div class="seccion-line"></div>
                 </div>
-                <p><b>El Camino Del Artista</b> está producido por <b>We Are Piccadilly</b>, (sin ánimo de lucro, presentado y dirigido por Tomás Martínez), para <b>La Radio Del Sur. MÉXICO (La Paz, Baja California Sur)</b>.</p>
-                <p>El programa está basado principalmente en contenido musical, abarcando diferentes estilos, con bandas y artistas de distintas épocas, con análisis y seguimiento a la actualidad musical.</p>
-                <p>Además de la música, “El Camino del Artista” cuenta también con información cultural, basadas en multitud de disciplinas artísticas como el cine, teatro, conciertos, pintura, escultura, literatura, etc.</p>
-                <p>“El Camino del Artista” pretende crear un viaje de sensaciones sonoras, ofreciendo también datos biográficos de las canciones, artistas y bandas programadas como contenidos del programa.</p>
-                <p><b>ESPAÑA / ITALIA / FRANCIA / ALEMANIA: 23.00h</b></p>
-                <p><b>MÉXICO: 15.00h</b></p>
-                <p><b>LA PAZ: 14.00h</b></p>
-                <p><b>COLOMBIA / PERÚ / BOLIVIA: 16.00h.</b></p>
-                <div id="texv1">
-                    <p>Nuestros Ultimos Programas:</p>
+
+                <div class="radio-desc">
+                    <p class="radio-intro">Producido por <strong>We Are Piccadilly</strong>, presentado y dirigido por <strong>Tomás Martínez</strong>, para <strong>La Radio del Sur · México</strong> (La Paz, Baja California Sur).</p>
+                    <p>Un viaje de sensaciones sonoras que abarca diferentes estilos musicales, bandas y artistas de distintas épocas, con análisis de la actualidad musical e información cultural sobre cine, teatro, conciertos, pintura, escultura y literatura.</p>
                 </div>
+
+                <div class="radio-schedule">
+                    <p class="radio-schedule-title">Horario de Emisión</p>
+                    <div class="radio-schedule-grid">
+                        <div class="radio-schedule-item">
+                            <span class="schedule-region">España · Italia · Francia · Alemania</span>
+                            <span class="schedule-time">23:00 h</span>
+                        </div>
+                        <div class="radio-schedule-item">
+                            <span class="schedule-region">México</span>
+                            <span class="schedule-time">15:00 h</span>
+                        </div>
+                        <div class="radio-schedule-item">
+                            <span class="schedule-region">Colombia · Perú · Bolivia</span>
+                            <span class="schedule-time">16:00 h</span>
+                        </div>
+                        <div class="radio-schedule-item">
+                            <span class="schedule-region">La Paz</span>
+                            <span class="schedule-time">14:00 h</span>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="radio-episodes-label">Últimos Programas</p>
             </div>
             <div id="radio_container">
-                <!-- GENERADOR CON JS -->
+                <!-- Generado con JS -->
             </div>
             <div class="btn_Mas">
                 <button onclick="window.open('https://www.ivoox.com/podcast-camino-del-artista-we-are-piccadilly_sq_f12547461_1.html', '_blank')">Escucha los Programas Anteriores</button>
             </div>
         </main>
         <footer>
-            <p>Copyright©2025 - WeArePiccadilly Producciones</p>
+            <p>Copyright &copy; 2025 — WeArePiccadilly Producciones</p>
             <div id="social_media">
                 <a href="https://www.instagram.com/we_are_piccadilly/" target="_blank" rel="noopener noreferrer"><span class="icon"><i class="icon-instagram"></i></span></a>
                 <a href="https://www.youtube.com/@wearepiccadilly" target="_blank" rel="noopener noreferrer"><span class="icon"><i class="icon-youtube-play"></i></span></a>
                 <a href="https://www.ejemplo.com" target="_blank" rel="noopener noreferrer"><span class="icon"><i class="icon-linkedin-squared"></i></span></a>
                 <a href="https://www.facebook.com/PICCADILLYECLA/?locale=es_ES" target="_blank" rel="noopener noreferrer"><span class="icon"><i class="icon-facebook"></i></span></a>
-                <a href="https://es.pinterest.com/wearepiccadilly/" target="_blank" rel="noopener noreferrer"><span class="icon"><i class="icon-pinterest"></i></span></a>  
+                <a href="https://es.pinterest.com/wearepiccadilly/" target="_blank" rel="noopener noreferrer"><span class="icon"><i class="icon-pinterest"></i></span></a>
             </div>
         </footer>
     </div>
